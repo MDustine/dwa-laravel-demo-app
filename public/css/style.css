@@ -1,0 +1,84 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+.container.narrow { max-width: 520px; }
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+h1 { margin: 0 0 16px; font-size: 26px; }
+.page-header h1 { margin: 0; }
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+th { background: #f9fafb; font-size: 14px; }
+tr:hover td { background: #fafbff; }
+.empty { text-align: center; color: #888; padding: 24px; }
+
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #2563eb;
+    color: #fff;
+}
+.btn:hover { opacity: 0.9; }
+.btn-small { padding: 5px 10px; font-size: 13px; }
+.btn-gray { background: #6b7280; }
+.btn-green { background: #16a34a; }
+.btn-red { background: #dc2626; }
+
+.actions { white-space: nowrap; }
+.actions form { display: inline; }
+
+.form-group { margin-bottom: 16px; }
+label { display: block; margin-bottom: 6px; font-weight: bold; font-size: 14px; }
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+}
+input:focus { outline: 2px solid #93c5fd; border-color: #2563eb; }
+
+.errors {
+    background: #fee2e2;
+    color: #991b1b;
+    border-radius: 6px;
+    padding: 12px 12px 12px 30px;
+    margin-bottom: 16px;
+}
+
+.details p { margin: 0; padding: 12px 0; border-bottom: 1px solid #e5e7eb; }
+.details p:last-child { border-bottom: none; }
+.buttons { margin-top: 16px; }
+
+.center { text-align: center; }

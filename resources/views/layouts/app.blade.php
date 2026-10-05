@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <title>{{ $pageTitle ?? 'My Laravel App' }}</title>
 </head>
 <body>
